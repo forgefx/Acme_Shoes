@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 using UnityEditor;
 using UnityEngine;
@@ -6,7 +6,8 @@ using Debug = UnityEngine.Debug;
 using System.Collections.Generic;
 
 
-public class BuildTests : EditorWindow
+
+public class BuildTestsOld : EditorWindow
 {
     public static string
         TargetFolder =
@@ -32,7 +33,7 @@ public class BuildTests : EditorWindow
 
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] { "Assets/Scenes/SampleScene.unity" };
-        buildPlayerOptions.locationPathName = "Build-fromEditorVSPROJBuildScript";
+        buildPlayerOptions.locationPathName = "Builds-fromEditorBuildScript";
         buildPlayerOptions.target = BuildTarget.WSAPlayer;
         buildPlayerOptions.options = BuildOptions.None;
         BuildPipeline.BuildPlayer(buildPlayerOptions);
@@ -49,9 +50,9 @@ public class BuildTests : EditorWindow
 
         // Command line arguments.
         var arguments = new List<string>();
-        arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Build-fromEditorVSPROJBuildScript\HoloLens-SpinningCube\HoloLens-SpinningCube.vcxproj");
+        //arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Builds-fromEditorBuildScript\HoloLens-SpinningCube\HoloLens-SpinningCube.vcxproj");
         //arguments.Add("/p:configuration="Release"");
-        //arguments.Add("-version");
+        arguments.Add("-version");
         //arguments.Add("/target:restore");
         //arguments.Add("/target:Clean"); // /target:Clean;Rebuild;Publish
         //arguments.Add("/");
@@ -60,21 +61,7 @@ public class BuildTests : EditorWindow
         //arguments.Add("-restore"); // Runs the Restore target prior to building the actual targets.
         //arguments.Add("-target:targets-go-here"); // Build the specified targets in the project.
         //arguments.Add("-targets[:file]"); // Write the list of available targets to the specified file (or the output device, if no file is specified), without actually executing the build process.
-        arguments.Add("-validate"); // Validate the project file and, if validation succeeds, build the project. If you don't specify schema, the project is validated against the default schema.
-        //arguments.Add("/p:OutputPath:Build-fromEditorMSBuildScript");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
+
 
         // Engage!
         StartProcess(program, arguments);
@@ -183,8 +170,23 @@ public class BuildTests : EditorWindow
         }
         process.StartInfo.Arguments = argumentsString;
 
-        //
-        Debug.Log($"[Build Output] StartProcess( process:{program}, arguments:{argumentsString})");
+        // Pipe process output to unity console.
+        process.OutputDataReceived += new DataReceivedEventHandler((s, e) =>
+        {
+            if (e.Data.Length > 0)
+            {
+                Debug.Log($"e.Data: {e.Data}");
+                //_output += e.Data + Environment.NewLine;
+            }
+        });
+        process.ErrorDataReceived += new DataReceivedEventHandler((s, e) =>
+        {
+            if (e.Data.Length > 0)
+            {
+                Debug.Log($"e.Data: {e.Data}");
+                //_output += e.Data + Environment.NewLine;
+            }
+        });
 
         // Engage!
         process.Start();
@@ -193,23 +195,8 @@ public class BuildTests : EditorWindow
         process.BeginOutputReadLine();
         process.BeginErrorReadLine();
 
-        // Pipe process output to unity console.
-        process.OutputDataReceived += new DataReceivedEventHandler((s, e) =>
-        {
-            if (e.Data.Length > 0)
-            {
-                Debug.Log($"[Build Output] {e.Data}");
-                //_output += e.Data + Environment.NewLine;
-            }
-        });
-        process.ErrorDataReceived += new DataReceivedEventHandler((s, e) =>
-        {
-            if (e.Data.Length > 0)
-            {
-                Debug.Log($"[Build Output] {e.Data}");
-                //_output += e.Data + Environment.NewLine;
-            }
-        });
+        //
+        Debug.Log($"StartProcess( process:{program}, arguments:{argumentsString})");
 
     }
 
