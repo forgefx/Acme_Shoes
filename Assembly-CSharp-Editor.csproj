@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\MSBuild.cs" />
+    <Compile Include="Assets\Editor\BuildTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

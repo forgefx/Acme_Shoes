@@ -6,19 +6,19 @@ using Debug = UnityEngine.Debug;
 using System.Collections.Generic;
 
 
-public class MSBuild : EditorWindow
+public class BuildTests : EditorWindow
 {
     public static string
         TargetFolder =
             @"C:\Repos\HoloLens-SpinningCube\Builds-fromEditorBuildScript";
 
 
-    [MenuItem("Build_VSPROJ/HoloLens APPX Build_VSPROJ Window")]
+    [MenuItem("BuildTests/Show Window")]
     public static void ShowWindow()
     {
-        var window = EditorWindow.GetWindow(typeof(MSBuild));
+        var window = EditorWindow.GetWindow(typeof(BuildTests));
         var titleContent = new GUIContent();
-        titleContent.text = "Build_VSPROJ and Publish";
+        titleContent.text = "Build Tests";
         window.titleContent = titleContent;
     }
 
