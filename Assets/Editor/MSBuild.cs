@@ -1,25 +1,31 @@
 using System;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 using System.Collections.Generic;
 
 
-namespace _Dashboard
-{
     public class MSBuild : EditorWindow
     {
         public static string
             TargetFolder =
                 @"C:\Repos\HoloLens-SpinningCube\Builds-fromEditorBuildScript";
 
-        /// <summary>
-        /// Build Visual Studio project.
-        /// </summary>
-        public void Build_VSPROJ()
+
+        [MenuItem("Build_VSPROJ/HoloLens APPX Build_VSPROJ Window")]
+        public static void ShowWindow()
+        {
+            var window = EditorWindow.GetWindow(typeof(MSBuild));
+            var titleContent = new GUIContent();
+            titleContent.text = "Build_VSPROJ and Publish";
+            window.titleContent = titleContent;
+        }
+
+    /// <summary>
+    /// Build Visual Studio project.
+    /// </summary>
+    public void Build_VSPROJ()
         {
             EditorUserBuildSettings.wsaSubtarget = WSASubtarget.HoloLens;
             EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.D3D;
@@ -64,21 +70,7 @@ namespace _Dashboard
 
 
 
-
-        bool groupEnabled;
-
- 
-
-        public static string DashboardURL = "https://forgeboards.com/cbrnd-ar/";
-
-        [MenuItem("Build_VSPROJ/HoloLens APPX Build_VSPROJ Window")]
-        public static void ShowWindow()
-        {
-            var window = EditorWindow.GetWindow(typeof(MSBuild));
-            var titleContent = new GUIContent();
-            titleContent.text = "Build_VSPROJ and Publish";
-            window.titleContent = titleContent;
-        }
+    
 
         private void OnGUI()
         {
@@ -94,7 +86,7 @@ namespace _Dashboard
 
             // INTRO TEXT
             GUILayout.Space((int)LineSpace.Small);
-            string txt = "Use this window to build and publish WebGL up to the FTP server.";
+            string txt = "Use this window to build both Visual Studio project files and then .appx files for HoloLens.";
             GUILayout.Label(txt, EditorStyles.wordWrappedLabel);
             GUILayout.Space((int)LineSpace.Small);
 
@@ -159,19 +151,9 @@ namespace _Dashboard
         }
 
 
-        public void Test()
-        {
-            Debug.Log("Test");
-        }
-
         public void OpenFolder()
         {
             Application.OpenURL(TargetFolder);
-        }
-
-        public void OpenWebpage()
-        {
-            Application.OpenURL(DashboardURL);
         }
 
         public enum LineSpace
@@ -181,6 +163,9 @@ namespace _Dashboard
             Large = 30
         }
 
+        /// <summary>
+        /// Example usage of StartProcess() method, including arguments list.
+        /// </summary>
         private void StartNotepad()
         {
             // Program to run.
@@ -195,4 +180,3 @@ namespace _Dashboard
             StartProcess(program, arguments);
         }
     }
-}
