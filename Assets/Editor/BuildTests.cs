@@ -8,9 +8,7 @@ using System.Collections.Generic;
 
 public class BuildTests : EditorWindow
 {
-    public static string
-        TargetFolder =
-            @"C:\Repos\HoloLens-SpinningCube\Builds-fromEditorBuildScript";
+
 
 
     [MenuItem("BuildTests/Show Window")]
@@ -38,48 +36,7 @@ public class BuildTests : EditorWindow
         BuildPipeline.BuildPlayer(buildPlayerOptions);
     }
 
-    /// <summary>
-    /// Build .appx file for HoloLens.
-    /// MSBuild "{Project}.csproj" /p:Configuration=Debug;AppxBundle=Always;AppxBundlePlatforms="x64";OutputPath="AppxPackages"
-    /// </summary>
-    private void Run_MSBuild()
-    {
-        // Program to run.
-        var program = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild.exe";
-
-        // Command line arguments.
-        var arguments = new List<string>();
-        arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Build-fromEditorVSPROJBuildScript\HoloLens-SpinningCube\HoloLens-SpinningCube.vcxproj");
-        //arguments.Add("/p:configuration="Release"");
-        //arguments.Add("-version");
-        //arguments.Add("/target:restore");
-        //arguments.Add("/target:Clean"); // /target:Clean;Rebuild;Publish
-        //arguments.Add("/");
-        //arguments.Add("-detailedSummary");
-        //arguments.Add("-nologo"); // Don't display the startup banner or the copyright message.
-        //arguments.Add("-restore"); // Runs the Restore target prior to building the actual targets.
-        //arguments.Add("-target:targets-go-here"); // Build the specified targets in the project.
-        //arguments.Add("-targets[:file]"); // Write the list of available targets to the specified file (or the output device, if no file is specified), without actually executing the build process.
-        arguments.Add("-validate"); // Validate the project file and, if validation succeeds, build the project. If you don't specify schema, the project is validated against the default schema.
-        //arguments.Add("/p:OutputPath:Build-fromEditorMSBuildScript");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-
-        // Engage!
-        StartProcess(program, arguments);
-    }
-
+ 
 
 
 
@@ -124,8 +81,8 @@ public class BuildTests : EditorWindow
         GUILayout.Label("--------------------------------------------------", EditorStyles.boldLabel);
         GUILayout.Space((int)LineSpace.Small);
 
-        TargetFolder = EditorGUILayout.TextField("Build_VSPROJ folder", TargetFolder);
-        GUILayout.Space((int)LineSpace.Small);
+        // TargetFolder = EditorGUILayout.TextField("Build_VSPROJ folder", TargetFolder);
+        // GUILayout.Space((int)LineSpace.Small);
 
         if (GUILayout.Button("Build_VSPROJ"))
         {
@@ -149,75 +106,17 @@ public class BuildTests : EditorWindow
 
         if (GUILayout.Button("Test: MSBuild.exe -version"))
         {
-            Run_MSBuild();
+            MSBuild.ConfigureAndRun();
         }
     }
 
-    private string _output;
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="program"></param>
-    /// <param name="arguments"></param>
-    private void StartProcess(string program, List<string> arguments)
-    {
-        _output = String.Empty;
-
-        // Process setup.
-        Process process = new Process();
-        process.StartInfo.FileName = program;
-        process.StartInfo.RedirectStandardError = true;
-        process.StartInfo.RedirectStandardOutput = true;
-        process.StartInfo.UseShellExecute = false;
-        process.StartInfo.CreateNoWindow = true;
-
-        // Process arguments.
-        var argumentsString = String.Empty;
-        foreach (var argument in arguments)
-        {
-            if (argument != String.Empty)
-            {
-                argumentsString = argumentsString + argument + " ";
-            }
-        }
-        process.StartInfo.Arguments = argumentsString;
-
-        //
-        Debug.Log($"[Build Output] StartProcess( process:{program}, arguments:{argumentsString})");
-
-        // Engage!
-        process.Start();
-
-        // Also, grab that output from the process.
-        process.BeginOutputReadLine();
-        process.BeginErrorReadLine();
-
-        // Pipe process output to unity console.
-        process.OutputDataReceived += new DataReceivedEventHandler((s, e) =>
-        {
-            if (e.Data.Length > 0)
-            {
-                Debug.Log($"[Build Output] {e.Data}");
-                //_output += e.Data + Environment.NewLine;
-            }
-        });
-        process.ErrorDataReceived += new DataReceivedEventHandler((s, e) =>
-        {
-            if (e.Data.Length > 0)
-            {
-                Debug.Log($"[Build Output] {e.Data}");
-                //_output += e.Data + Environment.NewLine;
-            }
-        });
-
-    }
 
 
 
     public void OpenFolder()
     {
-        Application.OpenURL(TargetFolder);
+        //Application.OpenURL(TargetFolder);
     }
 
     public enum LineSpace
@@ -227,20 +126,4 @@ public class BuildTests : EditorWindow
         Large = 30
     }
 
-    /// <summary>
-    /// Example usage of StartProcess() method, including arguments list.
-    /// </summary>
-    private void StartNotepad()
-    {
-        // Program to run.
-        var program = @"C:\Program Files (x86)\Notepad++\notepad++.exe";
-
-        // Command line arguments.
-        var arguments = new List<string>();
-        arguments.Add("-loadingTime");
-        arguments.Add("--help");
-
-        // Engage!
-        StartProcess(program, arguments);
-    }
 }
