@@ -13,7 +13,28 @@ public static class MSBuild
 
         // Command line arguments.
         var arguments = new List<string>();
-        arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Build-fromEditorVSPROJBuildScript\HoloLens-SpinningCube\HoloLens-SpinningCube.vcxproj");
+
+        // What to build.
+        arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Build-fromEditor\HoloLens-SpinningCube.sln");
+
+        // Validate the project file and, if validation succeeds, build the project. If you don't specify schema, the project is validated against the default schema.
+        //arguments.Add("-validate"); 
+
+        //
+        arguments.Add("/p:Configuration=Release;AppxBundle=Always;AppxBundlePlatforms=\"ARM64\""); // OutputPath=\"AppxPackages3\"");
+
+        arguments.Add("/p:AppxPackageDir=\"AppxPackages4\"");
+
+        //
+        //arguments.Add("/p:AppxBundle=Always");
+
+        //
+        //arguments.Add("/p:AppxBundlePlatforms=\"x64\"");
+
+        //
+        arguments.Add($"/p:OutputPath={@"C:\Repos\HoloLens-SpinningCube\Build-fromEditor\foo"}");
+
+
         //arguments.Add("/p:configuration="Release"");
         //arguments.Add("-version");
         //arguments.Add("/target:restore");
@@ -24,13 +45,11 @@ public static class MSBuild
         //arguments.Add("-restore"); // Runs the Restore target prior to building the actual targets.
         //arguments.Add("-target:targets-go-here"); // Build the specified targets in the project.
         //arguments.Add("-targets[:file]"); // Write the list of available targets to the specified file (or the output device, if no file is specified), without actually executing the build process.
-        arguments.Add("-validate"); // Validate the project file and, if validation succeeds, build the project. If you don't specify schema, the project is validated against the default schema.
-        //arguments.Add("/p:OutputPath:Build-fromEditorMSBuildScript");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
-        arguments.Add("");
+
+        //arguments.Add("/p:OutputPath=Build-01");
+
+        //arguments.Add("-p:name=value");
+        //arguments.Add("-property:name=value");
         arguments.Add("");
         arguments.Add("");
         arguments.Add("");

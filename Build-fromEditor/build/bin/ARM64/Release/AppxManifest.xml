@@ -16,7 +16,7 @@
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.19041.0" />
-    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.29231.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.30035.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
@@ -45,15 +45,15 @@
     </Extension>
   </Extensions>
   <build:Metadata>
-    <build:Item Name="cl.exe" Version="19.29.30040.0 built by: vcwrkspc" />
+    <build:Item Name="cl.exe" Version="19.29.30137.0 built by: vcwrkspc" />
     <build:Item Name="CodeSharingProject" Value="6A2255BE-B368-4127-9782-BD762DEA33C5" />
     <build:Item Name="VisualStudio" Version="16.0" />
     <build:Item Name="OperatingSystem" Version="10.0.22000.1 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.31515.66" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.31910.33" />
     <build:Item Name="ProjectGUID" Value="{2fabdf39-a3a3-4497-95ba-5aee089ebf0f}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Native" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="16.0.31515.66" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="16.0.31909.227" />
     <build:Item Name="WindowsMobile" Version="10.0.19041.0" />
     <build:Item Name="MakePri.exe" Version="10.0.19041.685 (WinBuild.160101.0800)" />
   </build:Metadata>
