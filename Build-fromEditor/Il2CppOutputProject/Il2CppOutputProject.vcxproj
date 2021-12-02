@@ -102,6 +102,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppTypeDefinitions.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.OpenXR_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Mono.Security_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib_CodeGen.c">
@@ -114,11 +116,33 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.ARFoundation_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.ARSubsystems_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.Management_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.ConformanceAutomation_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.MockDriver_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.MockRuntime_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.OculusQuestSupport_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.RuntimeDebugger_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AIModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AndroidJNIModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AnimationModule_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.ARModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AssetBundleModule_CodeGen.c">
     </ClCompile>
@@ -136,6 +160,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.InputModule_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.JSONSerializeModule_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.ParticleSystemModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.Physics2DModule_CodeGen.c">
@@ -143,6 +169,10 @@
     <ClCompile Include="Source\il2cppOutput\UnityEngine.PhysicsModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.SharedInternalsModule_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.SpatialTracking_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.SpriteShapeModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.SubsystemsModule_CodeGen.c">
     </ClCompile>
@@ -155,6 +185,8 @@
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UIElementsNativeModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UIModule_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.UI_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UnityAnalyticsModule_CodeGen.c">
     </ClCompile>
@@ -182,9 +214,35 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods3.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods5.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods6.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics10.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics11.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics12.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics13.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics14.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics15.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics16.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics17.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics18.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics19.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics2.cpp">
     </ClCompile>
@@ -197,6 +255,10 @@
     <ClCompile Include="Source\il2cppOutput\Generics6.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics7.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics8.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics9.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\I18N.CJK.cpp">
     </ClCompile>
@@ -234,6 +296,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCalculateFieldValues.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCalculateFieldValues1.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCalculateTypeValues.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCFieldValuesTable.cpp">
@@ -266,11 +330,57 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions18.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions19.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions20.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions21.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions22.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions23.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions24.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions25.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions26.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions27.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions28.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions29.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions3.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions30.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions31.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions32.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions33.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions34.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions35.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions36.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions37.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions38.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions39.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions40.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions41.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions5.cpp">
     </ClCompile>
@@ -289,6 +399,10 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppInvokerTable.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppReversePInvokeWrapperTable.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.OpenXR.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.OpenXR_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Mono.Security.cpp">
     </ClCompile>
@@ -315,6 +429,8 @@
     <ClCompile Include="Source\il2cppOutput\mscorlib17.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib18.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib19.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib2.cpp">
     </ClCompile>
@@ -354,6 +470,60 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System_Attr.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem5.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem6.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem7.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.ARFoundation.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.ARFoundation_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.ARSubsystems.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.ARSubsystems_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.Management.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.Management_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.ConformanceAutomation.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.ConformanceAutomation_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.MockDriver.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.MockDriver_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.MockRuntime.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.MockRuntime_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.OculusQuestSupport.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.OculusQuestSupport_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.RuntimeDebugger.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR.Features.RuntimeDebugger_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.OpenXR_Attr.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AIModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AIModule_Attr.cpp">
@@ -365,6 +535,10 @@
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AnimationModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AnimationModule_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.ARModule.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.ARModule_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AssetBundleModule.cpp">
     </ClCompile>
@@ -402,6 +576,10 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.InputModule_Attr.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.JSONSerializeModule.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.JSONSerializeModule_Attr.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.ParticleSystemModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.ParticleSystemModule_Attr.cpp">
@@ -417,6 +595,14 @@
     <ClCompile Include="Source\il2cppOutput\UnityEngine.SharedInternalsModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.SharedInternalsModule_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.SpatialTracking.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.SpatialTracking_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.SpriteShapeModule.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.SpriteShapeModule_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.SubsystemsModule.cpp">
     </ClCompile>
@@ -434,6 +620,14 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.TilemapModule_Attr.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.UI.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.UI1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.UI2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.UI3.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UIElementsNativeModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UIElementsNativeModule_Attr.cpp">
@@ -441,6 +635,8 @@
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UIModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UIModule_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\UnityEngine.UI_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.UnityAnalyticsModule.cpp">
     </ClCompile>
@@ -3924,15 +4120,15 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
-    <NMakePreprocessorDefinitions>_DEBUG;DEBUG;IL2CPP_DEFAULT_DATA_DIR_PATH=Data/il2cpp_data;ALL_INTERIOR_POINTERS=1;GC_GCJ_SUPPORT=1;JAVA_FINALIZATION=1;NO_EXECUTE_PERMISSION=1;GC_NO_THREADS_DISCOVERY=1;IGNORE_DYNAMIC_LOADING=1;GC_DONT_REGISTER_MAIN_STATIC_DATA=1;GC_VERSION_MAJOR=7;GC_VERSION_MINOR=7;GC_VERSION_MICRO=0;GC_THREADS=1;USE_MMAP=1;USE_MUNMAP=1;NET_4_0=1;UNITY_AOT=1;NET_STANDARD_2_0=1;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;WINDOWS;_UNICODE;UNICODE;WINAPI_FAMILY=WINAPI_FAMILY_APP;IL2CPP_ENABLE_WRITE_BARRIERS=1;IL2CPP_INCREMENTAL_TIME_SLICE=3;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;UNITY_WSA;UNITY_WINRT;PLATFORM_WINRT</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions>_DEBUG;DEBUG;IL2CPP_DEFAULT_DATA_DIR_PATH=Data/il2cpp_data;ALL_INTERIOR_POINTERS=1;GC_GCJ_SUPPORT=1;JAVA_FINALIZATION=1;NO_EXECUTE_PERMISSION=1;GC_NO_THREADS_DISCOVERY=1;IGNORE_DYNAMIC_LOADING=1;GC_DONT_REGISTER_MAIN_STATIC_DATA=1;GC_VERSION_MAJOR=7;GC_VERSION_MINOR=7;GC_VERSION_MICRO=0;GC_THREADS=1;USE_MMAP=1;USE_MUNMAP=1;NET_4_0=1;UNITY_AOT=1;NET_STANDARD_2_0=1;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;WINDOWS;_UNICODE;UNICODE;WINAPI_FAMILY=WINAPI_FAMILY_APP;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;UNITY_WSA;UNITY_WINRT;PLATFORM_WINRT</NMakePreprocessorDefinitions>
     <BuilderConfiguration>Debug</BuilderConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release' OR '$(Configuration)'=='Master'">
-    <NMakePreprocessorDefinitions>_NDEBUG;NDEBUG;IL2CPP_DEFAULT_DATA_DIR_PATH=Data/il2cpp_data;ALL_INTERIOR_POINTERS=1;GC_GCJ_SUPPORT=1;JAVA_FINALIZATION=1;NO_EXECUTE_PERMISSION=1;GC_NO_THREADS_DISCOVERY=1;IGNORE_DYNAMIC_LOADING=1;GC_DONT_REGISTER_MAIN_STATIC_DATA=1;GC_VERSION_MAJOR=7;GC_VERSION_MINOR=7;GC_VERSION_MICRO=0;GC_THREADS=1;USE_MMAP=1;USE_MUNMAP=1;NET_4_0=1;UNITY_AOT=1;NET_STANDARD_2_0=1;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;WINDOWS;_UNICODE;UNICODE;WINAPI_FAMILY=WINAPI_FAMILY_APP;IL2CPP_ENABLE_WRITE_BARRIERS=1;IL2CPP_INCREMENTAL_TIME_SLICE=3;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;UNITY_WSA;UNITY_WINRT;PLATFORM_WINRT</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions>_NDEBUG;NDEBUG;IL2CPP_DEFAULT_DATA_DIR_PATH=Data/il2cpp_data;ALL_INTERIOR_POINTERS=1;GC_GCJ_SUPPORT=1;JAVA_FINALIZATION=1;NO_EXECUTE_PERMISSION=1;GC_NO_THREADS_DISCOVERY=1;IGNORE_DYNAMIC_LOADING=1;GC_DONT_REGISTER_MAIN_STATIC_DATA=1;GC_VERSION_MAJOR=7;GC_VERSION_MINOR=7;GC_VERSION_MICRO=0;GC_THREADS=1;USE_MMAP=1;USE_MUNMAP=1;NET_4_0=1;UNITY_AOT=1;NET_STANDARD_2_0=1;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;WINDOWS;_UNICODE;UNICODE;WINAPI_FAMILY=WINAPI_FAMILY_APP;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;UNITY_WSA;UNITY_WINRT;PLATFORM_WINRT</NMakePreprocessorDefinitions>
     <BuilderConfiguration>Release</BuilderConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='MasterWithLTCG'">
-    <NMakePreprocessorDefinitions>_NDEBUG;NDEBUG;IL2CPP_DEFAULT_DATA_DIR_PATH=Data/il2cpp_data;ALL_INTERIOR_POINTERS=1;GC_GCJ_SUPPORT=1;JAVA_FINALIZATION=1;NO_EXECUTE_PERMISSION=1;GC_NO_THREADS_DISCOVERY=1;IGNORE_DYNAMIC_LOADING=1;GC_DONT_REGISTER_MAIN_STATIC_DATA=1;GC_VERSION_MAJOR=7;GC_VERSION_MINOR=7;GC_VERSION_MICRO=0;GC_THREADS=1;USE_MMAP=1;USE_MUNMAP=1;NET_4_0=1;UNITY_AOT=1;NET_STANDARD_2_0=1;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;WINDOWS;_UNICODE;UNICODE;WINAPI_FAMILY=WINAPI_FAMILY_APP;IL2CPP_ENABLE_WRITE_BARRIERS=1;IL2CPP_INCREMENTAL_TIME_SLICE=3;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;UNITY_WSA;UNITY_WINRT;PLATFORM_WINRT</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions>_NDEBUG;NDEBUG;IL2CPP_DEFAULT_DATA_DIR_PATH=Data/il2cpp_data;ALL_INTERIOR_POINTERS=1;GC_GCJ_SUPPORT=1;JAVA_FINALIZATION=1;NO_EXECUTE_PERMISSION=1;GC_NO_THREADS_DISCOVERY=1;IGNORE_DYNAMIC_LOADING=1;GC_DONT_REGISTER_MAIN_STATIC_DATA=1;GC_VERSION_MAJOR=7;GC_VERSION_MINOR=7;GC_VERSION_MICRO=0;GC_THREADS=1;USE_MMAP=1;USE_MUNMAP=1;NET_4_0=1;UNITY_AOT=1;NET_STANDARD_2_0=1;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32;WINDOWS;_UNICODE;UNICODE;WINAPI_FAMILY=WINAPI_FAMILY_APP;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;UNITY_WSA;UNITY_WINRT;PLATFORM_WINRT</NMakePreprocessorDefinitions>
     <BuilderConfiguration>ReleasePlus</BuilderConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug' OR '$(Configuration)'=='Release'">
@@ -3958,7 +4154,7 @@
     <IntDir>$(SolutionDir)\build\obj\il2cppOutputProject\$(Platform)\$(Configuration)\</IntDir>
     <NMakeOutput>$(OutDir)GameAssembly.dll</NMakeOutput>
     <IncludePath>$(VC_IncludePath);$(UniversalCRT_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\IL2CPP\libil2cpp;$(ProjectDir)\IL2CPP\external\bdwgc\include</IncludePath>
-    <NMakeBuildCommandLine>"$(ProjectDir)\IL2CPP\build\deploy\netcoreapp3.1\il2cpp.exe" --libil2cpp-static --compile-cpp -architecture=$(BuilderArchitecture) -configuration=$(BuilderConfiguration) -platform=winrt -outputpath="$(NMakeOutput)" --data-folder="$(OutDir)\" -cachedirectory="$(IntDir)\" -generatedcppdir="$(ProjectDir)\Source" $(Il2CppDebuggerFlags) --incremental-g-c-time-slice=3 --baselib-directory="$(UnityWSAPlayerDir)Players\UAP\il2cpp\$(PlatformTarget)\$(UnityPlayerConfiguration)" --avoid-dynamic-library-copy --profiler-report --additional-defines=WINDOWS_UWP --additional-defines=UNITY_UWP --additional-defines=UNITY_WSA_10_0 --additional-defines=UNITY_WSA --additional-defines=UNITY_WINRT --additional-defines=PLATFORM_WINRT -dotnetprofile=unityaot -verbose --relative-data-path=Data/il2cpp_data --map-file-parser="$(ProjectDir)\IL2CPP\MapFileParser\MapFileParser.exe"</NMakeBuildCommandLine>
+    <NMakeBuildCommandLine>"$(ProjectDir)\IL2CPP\build\deploy\netcoreapp3.1\il2cpp.exe" --libil2cpp-static --compile-cpp -architecture=$(BuilderArchitecture) -configuration=$(BuilderConfiguration) -platform=winrt -outputpath="$(NMakeOutput)" --data-folder="$(OutDir)\" -cachedirectory="$(IntDir)\" -generatedcppdir="$(ProjectDir)\Source" $(Il2CppDebuggerFlags) --baselib-directory="$(UnityWSAPlayerDir)Players\UAP\il2cpp\$(PlatformTarget)\$(UnityPlayerConfiguration)" --avoid-dynamic-library-copy --profiler-report --additional-defines=WINDOWS_UWP --additional-defines=UNITY_UWP --additional-defines=UNITY_WSA_10_0 --additional-defines=UNITY_WSA --additional-defines=UNITY_WINRT --additional-defines=PLATFORM_WINRT -dotnetprofile=unityaot -verbose --relative-data-path=Data/il2cpp_data --map-file-parser="$(ProjectDir)\IL2CPP\MapFileParser\MapFileParser.exe"</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>$(NMakeBuildCommandLine) -forcerebuild</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>del "$(NMakeOutput)"</NMakeCleanCommandLine>
   </PropertyGroup>

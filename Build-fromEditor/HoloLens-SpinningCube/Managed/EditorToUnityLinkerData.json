@@ -11,6 +11,15 @@
             ]
         },
         {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Behaviour",
+            "fullManagedTypeName": "UnityEngine.Behaviour",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "EditorExtension",
             "fullManagedTypeName": "",
@@ -21,8 +30,26 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Component",
+            "fullManagedTypeName": "UnityEngine.Component",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "MonoScript",
             "fullManagedTypeName": "UnityEditor.MonoScript",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MonoBehaviour",
+            "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/SampleScene.unity"
@@ -41,6 +68,24 @@
             "managedAssemblyName": "",
             "nativeClass": "NamedObject",
             "fullManagedTypeName": "",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Texture",
+            "fullManagedTypeName": "UnityEngine.Texture",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Texture2D",
+            "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/SampleScene.unity"
@@ -316,35 +361,8 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Behaviour",
-            "fullManagedTypeName": "UnityEngine.Behaviour",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/SampleScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "GameObject",
             "fullManagedTypeName": "UnityEngine.GameObject",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/SampleScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Component",
-            "fullManagedTypeName": "UnityEngine.Component",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/SampleScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "MonoBehaviour",
-            "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/SampleScene.unity"
@@ -363,24 +381,6 @@
             "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Mesh",
             "fullManagedTypeName": "UnityEngine.Mesh",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/SampleScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Texture",
-            "fullManagedTypeName": "UnityEngine.Texture",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/SampleScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Texture2D",
-            "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/SampleScene.unity"
@@ -426,6 +426,174 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Exit",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Microsoft.MixedReality.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Microsoft.MixedReality.OpenXR.HPMixedRealityControllerProfile",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Microsoft.MixedReality.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Microsoft.MixedReality.OpenXR.HandTrackingFeaturePlugin",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Microsoft.MixedReality.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Microsoft.MixedReality.OpenXR.HoloLensFeaturePlugin",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Microsoft.MixedReality.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Microsoft.MixedReality.OpenXR.Remoting.AppRemotingPlugin",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Microsoft.MixedReality.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Microsoft.MixedReality.OpenXR.Remoting.EditorRemotingPlugin",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.InputSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.InputSystemObject",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.InputSystem.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.InputSystem.RemoteInputPlayerConnection",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Management.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Management.XRGeneralSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Management.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Management.XRManagerSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.Features.ConformanceAutomation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.ConformanceAutomation.ConformanceAutomationFeature",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.Features.MockDriver.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Mock.MockDriver",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.Features.MockRuntime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Mock.MockRuntime",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.Features.OculusQuestSupport.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.Features.RuntimeDebugger.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.RuntimeDebugger.RuntimeDebuggerOpenXRFeature",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Interactions.EyeGazeInteraction",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Interactions.HTCViveControllerProfile",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Interactions.KHRSimpleControllerProfile",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftHandInteraction",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftMotionControllerProfile",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Interactions.OculusTouchControllerProfile",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.OpenXRLoaderNoPreInit",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.OpenXRSettings",
             "moduleName": "",
             "usedInScenes": []
         }

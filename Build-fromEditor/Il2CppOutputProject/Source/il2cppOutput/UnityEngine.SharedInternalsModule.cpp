@@ -87,6 +87,8 @@ struct NativePropertyAttribute_t300C37301B5C27B1EECB6CBE7EED16EEDA11975A;
 struct NativeThrowsAttribute_tF59F2833BDD09C6C89298E603D5C3A598CC08137;
 // UnityEngine.Bindings.NativeTypeAttribute
 struct NativeTypeAttribute_t7A71B541B18D0BA1A9889E05D36CAC56CF9F48D9;
+// UnityEngine.Bindings.NativeWritableSelfAttribute
+struct NativeWritableSelfAttribute_tFAFEEA81F742D3AFDA0A7A16F11C7E1E4DE4131A;
 // UnityEngine.Bindings.NotNullAttribute
 struct NotNullAttribute_t22E59D8061EE39B8A3F837C2245240C2466382FC;
 // System.Globalization.NumberFormatInfo
@@ -1036,6 +1038,24 @@ public:
 	inline void set_U3CThrowsExceptionU3Ek__BackingField_0(bool value)
 	{
 		___U3CThrowsExceptionU3Ek__BackingField_0 = value;
+	}
+};
+
+
+// UnityEngine.Bindings.NativeWritableSelfAttribute
+struct NativeWritableSelfAttribute_tFAFEEA81F742D3AFDA0A7A16F11C7E1E4DE4131A  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+	// System.Boolean UnityEngine.Bindings.NativeWritableSelfAttribute::<WritableSelf>k__BackingField
+	bool ___U3CWritableSelfU3Ek__BackingField_0;
+
+public:
+	inline static int32_t get_offset_of_U3CWritableSelfU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(NativeWritableSelfAttribute_tFAFEEA81F742D3AFDA0A7A16F11C7E1E4DE4131A, ___U3CWritableSelfU3Ek__BackingField_0)); }
+	inline bool get_U3CWritableSelfU3Ek__BackingField_0() const { return ___U3CWritableSelfU3Ek__BackingField_0; }
+	inline bool* get_address_of_U3CWritableSelfU3Ek__BackingField_0() { return &___U3CWritableSelfU3Ek__BackingField_0; }
+	inline void set_U3CWritableSelfU3Ek__BackingField_0(bool value)
+	{
+		___U3CWritableSelfU3Ek__BackingField_0 = value;
 	}
 };
 
@@ -2129,6 +2149,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeTypeAttribute_set_Head
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeTypeAttribute__ctor_mF20A183198F79036927302F99BD89D14E5528A2C (NativeTypeAttribute_t7A71B541B18D0BA1A9889E05D36CAC56CF9F48D9 * __this, int32_t ___codegenOptions0, const RuntimeMethod* method);
 // System.Void UnityEngine.Bindings.NativeTypeAttribute::set_IntermediateScriptingStructName(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeTypeAttribute_set_IntermediateScriptingStructName_m34118253495FE12EE6E98EEB022D0B9DF8D991CA_inline (NativeTypeAttribute_t7A71B541B18D0BA1A9889E05D36CAC56CF9F48D9 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.Bindings.NativeWritableSelfAttribute::set_WritableSelf(System.Boolean)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeWritableSelfAttribute_set_WritableSelf_mB2E797FBF3F0F6E5EC5FD95C7ECE18B7913F933C_inline (NativeWritableSelfAttribute_tFAFEEA81F742D3AFDA0A7A16F11C7E1E4DE4131A * __this, bool ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Bindings.NotNullAttribute::set_Exception(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NotNullAttribute_set_Exception_mB0765502D567AE1CEEA8C8B62E4146C9ED9E100A_inline (NotNullAttribute_t22E59D8061EE39B8A3F837C2245240C2466382FC * __this, String_t* ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Scripting.RequiredByNativeCodeAttribute::set_Name(System.String)
@@ -2639,6 +2661,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativePropertyAttribute_set_TargetType_m
 		return;
 	}
 }
+// System.Void UnityEngine.Bindings.NativePropertyAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativePropertyAttribute__ctor_mDC3C2AFECA9EAC0326ABA1B0362B69F5950F7C26 (NativePropertyAttribute_t300C37301B5C27B1EECB6CBE7EED16EEDA11975A * __this, const RuntimeMethod* method)
+{
+	{
+		NativeMethodAttribute__ctor_mB0D8BA2FFA19561CCB4257F8D6D03726514A9E5F(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.Bindings.NativePropertyAttribute::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativePropertyAttribute__ctor_mD445B6930D234DDC1E50C59D544FB63960741A79 (NativePropertyAttribute_t300C37301B5C27B1EECB6CBE7EED16EEDA11975A * __this, String_t* ___name0, const RuntimeMethod* method)
 {
@@ -2801,6 +2831,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeTypeAttribute__ctor_m0914A881DE5A0
 		NativeTypeAttribute__ctor_mF20A183198F79036927302F99BD89D14E5528A2C(__this, L_0, /*hidden argument*/NULL);
 		String_t* L_1 = ___intermediateStructName1;
 		NativeTypeAttribute_set_IntermediateScriptingStructName_m34118253495FE12EE6E98EEB022D0B9DF8D991CA_inline(__this, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Bindings.NativeWritableSelfAttribute::set_WritableSelf(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeWritableSelfAttribute_set_WritableSelf_mB2E797FBF3F0F6E5EC5FD95C7ECE18B7913F933C (NativeWritableSelfAttribute_tFAFEEA81F742D3AFDA0A7A16F11C7E1E4DE4131A * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CWritableSelfU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.Void UnityEngine.Bindings.NativeWritableSelfAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeWritableSelfAttribute__ctor_mB97D35785A015D09F7FFD8505FB3B19C6ACF17F9 (NativeWritableSelfAttribute_tFAFEEA81F742D3AFDA0A7A16F11C7E1E4DE4131A * __this, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
+		NativeWritableSelfAttribute_set_WritableSelf_mB2E797FBF3F0F6E5EC5FD95C7ECE18B7913F933C_inline(__this, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -3239,6 +3295,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeTypeAttribute_set_Inte
 	{
 		String_t* L_0 = ___value0;
 		__this->set_U3CIntermediateScriptingStructNameU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeWritableSelfAttribute_set_WritableSelf_mB2E797FBF3F0F6E5EC5FD95C7ECE18B7913F933C_inline (NativeWritableSelfAttribute_tFAFEEA81F742D3AFDA0A7A16F11C7E1E4DE4131A * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CWritableSelfU3Ek__BackingField_0(L_0);
 		return;
 	}
 }
