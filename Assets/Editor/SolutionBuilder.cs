@@ -15,7 +15,7 @@ public static class SolutionBuilder
 
             BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
             buildPlayerOptions.scenes = new[] {"Assets/Scenes/SampleScene.unity"};
-            buildPlayerOptions.locationPathName = "Build-fromEditorVSPROJBuildScript";
+            buildPlayerOptions.locationPathName = "Builds";
             buildPlayerOptions.target = BuildTarget.WSAPlayer;
             buildPlayerOptions.options = BuildOptions.None;
             BuildPipeline.BuildPlayer(buildPlayerOptions);
