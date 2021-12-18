@@ -27,8 +27,6 @@ public class BuildTests : EditorWindow
     {
         SolutionBuilder.Build();
     }
-}
- 
 
 
 
