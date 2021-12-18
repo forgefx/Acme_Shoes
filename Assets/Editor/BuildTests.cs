@@ -25,17 +25,9 @@ public class BuildTests : EditorWindow
     /// </summary>
     public void Build_VSPROJ()
     {
-        EditorUserBuildSettings.wsaSubtarget = WSASubtarget.HoloLens;
-        EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.D3D;
-
-        BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
-        buildPlayerOptions.scenes = new[] { "Assets/Scenes/SampleScene.unity" };
-        buildPlayerOptions.locationPathName = "Build-fromEditorVSPROJBuildScript";
-        buildPlayerOptions.target = BuildTarget.WSAPlayer;
-        buildPlayerOptions.options = BuildOptions.None;
-        BuildPipeline.BuildPlayer(buildPlayerOptions);
+        SolutionBuilder.Build();
     }
-
+}
  
 
 
