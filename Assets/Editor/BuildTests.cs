@@ -26,6 +26,8 @@ public class BuildTests : EditorWindow
     public void Build_VSPROJ()
     {
         SolutionBuilder.Build();
+
+
     }
 
 

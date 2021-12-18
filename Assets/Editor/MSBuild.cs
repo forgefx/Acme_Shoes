@@ -15,7 +15,7 @@ public static class MSBuild
         var arguments = new List<string>();
 
         // What to build.
-        arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Build-fromEditorVSPROJBuildScript\HoloLens-SpinningCube.sln");
+        arguments.Add(@"C:\Builds\HoloLens-SpinningCube.sln");
 
         // Validate the project file and, if validation succeeds, build the project. If you don't specify schema, the project is validated against the default schema.
         //arguments.Add("-validate"); 
@@ -32,7 +32,7 @@ public static class MSBuild
         //arguments.Add("/p:AppxBundlePlatforms=\"x64\"");
 
         //
-        arguments.Add($"/p:OutputPath={@"C:\Repos\HoloLens-SpinningCube\Build-fromEditor\foo"}");
+        arguments.Add($"/p:OutputPath={@"C:\Builds-AppxOutput"}");
 
 
         //arguments.Add("/p:configuration="Release"");
