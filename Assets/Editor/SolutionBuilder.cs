@@ -16,7 +16,7 @@ public static class SolutionBuilder
 
             BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
             buildPlayerOptions.scenes = new[] {"Assets/Scenes/SampleScene.unity"};
-            buildPlayerOptions.locationPathName = @"C:/Builds";
+            buildPlayerOptions.locationPathName = "Starfish"; // was: @"C:/Builds";
             buildPlayerOptions.target = BuildTarget.WSAPlayer;
             buildPlayerOptions.options = BuildOptions.None;
             BuildPipeline.BuildPlayer(buildPlayerOptions);
