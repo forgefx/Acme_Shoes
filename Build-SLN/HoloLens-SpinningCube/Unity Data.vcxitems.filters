@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{009a40fc-d92c-444f-96ae-1fd59f126b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono">
+      <UniqueIdentifier>{5e54af01-6aa7-46f6-8d83-75dcec600a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\2.0">
+      <UniqueIdentifier>{115cd81a-7c27-48ce-8ce8-693c469ba38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\2.0\Browsers">
+      <UniqueIdentifier>{ff64fc45-80a6-4dc5-8c30-06866b0d6f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.0">
+      <UniqueIdentifier>{597a1a2b-4adf-4fac-8443-c2a0ccbddbba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.0\Browsers">
+      <UniqueIdentifier>{bc7c5304-d6ae-4c6c-9fc2-43b3cda67ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.5">
+      <UniqueIdentifier>{ddcf6cdf-e696-4826-b12c-a5455f9d3005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.5\Browsers">
+      <UniqueIdentifier>{3078489d-4c4d-4b52-ac2f-5fded9d31637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\mconfig">
+      <UniqueIdentifier>{56b9f6c4-909c-4803-84fc-1182d7ea8238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\Metadata">
+      <UniqueIdentifier>{2bd37ee0-7dea-4d3b-b295-cd04b7e87229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\Resources">
+      <UniqueIdentifier>{74589346-d8d7-4ea5-90fc-e82e3acf2b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Resources">
+      <UniqueIdentifier>{c3aa93fb-07d1-4986-a744-a302d2c85e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\UnitySubsystems\MicrosoftOpenXRPlugin">
+      <UniqueIdentifier>{3119049a-2391-43b0-917f-9ec5fca807a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\UnitySubsystems\UnityOpenXR">
+      <UniqueIdentifier>{8a2606be-eafc-4ebe-8a4a-7ce1f08be1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc">
+      <UniqueIdentifier>{323e3da9-f33e-4985-a16b-fe978e537ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data">
+      <UniqueIdentifier>{ca4eda80-34e1-4897-b8b5-2cbca3346cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\UnitySubsystems">
+      <UniqueIdentifier>{6c29f5f6-7937-40ae-b57d-c819383af7b0}</UniqueIdentifier>
+    </Filter>
+    <Resource Include="$(MSBuildThisFileDirectory)Resource.res" />
+    <None Include="$(MSBuildThisFileDirectory)StoreManifest.xml" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)UnityGenerated.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UnityGenerated.h" />
+    <None Include="$(MSBuildThisFileDirectory)Data\boot.config">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\globalgamemanagers">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\globalgamemanagers.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\globalgamemanagers.assets.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level0">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level0.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\nativePlugins.txt">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\RuntimeInitializeOnLoads.json">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\ScriptingAssemblies.json">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets0.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\browscap.ini">
+      <Filter>Data\il2cpp_data\etc\mono</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\config">
+      <Filter>Data\il2cpp_data\etc\mono</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\machine.config">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\settings.map">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\web.config">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\Browsers\Compat.browser">
+      <Filter>Data\il2cpp_data\etc\mono\2.0\Browsers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\machine.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\settings.map">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\web.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\Browsers\Compat.browser">
+      <Filter>Data\il2cpp_data\etc\mono\4.0\Browsers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\machine.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\settings.map">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\web.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\Browsers\Compat.browser">
+      <Filter>Data\il2cpp_data\etc\mono\4.5\Browsers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\mconfig\config.xml">
+      <Filter>Data\il2cpp_data\etc\mono\mconfig</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\Metadata\global-metadata.dat">
+      <Filter>Data\il2cpp_data\Metadata</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\Resources\I18N.CJK.dll-resources.dat">
+      <Filter>Data\il2cpp_data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\Resources\mscorlib.dll-resources.dat">
+      <Filter>Data\il2cpp_data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\Resources\unity default resources">
+      <Filter>Data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\Resources\unity_builtin_extra">
+      <Filter>Data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\UnitySubsystems\MicrosoftOpenXRPlugin\UnitySubsystemsManifest.json">
+      <Filter>Data\UnitySubsystems\MicrosoftOpenXRPlugin</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\UnitySubsystems\UnityOpenXR\UnitySubsystemsManifest.json">
+      <Filter>Data\UnitySubsystems\UnityOpenXR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)UnityOpenXR.dll" />
+    <None Include="$(MSBuildThisFileDirectory)UnityOpenXR.pdb" />
+    <None Include="$(MSBuildThisFileDirectory)MicrosoftOpenXRPlugin.dll" />
+    <None Include="$(MSBuildThisFileDirectory)MicrosoftOpenXRPlugin.pdb" />
+    <None Include="$(MSBuildThisFileDirectory)openxr_loader.dll" />
+    <None Include="$(MSBuildThisFileDirectory)openxr_loader.pdb" />
+  </ItemGroup>
+</Project>

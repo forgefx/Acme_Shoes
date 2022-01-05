@@ -1,2 +1,0 @@
-MainPackage=C:\Repos\HoloLens-SpinningCube\Build-fromEditor\build\bin\ARM\Release\HoloLens-SpinningCube_1.0.0.0_ARM.appx
-SymbolPackage=C:\Repos\HoloLens-SpinningCube\Build-fromEditor\build\obj\HoloLens-SpinningCube\ARM\Release\Symbols\HoloLens-SpinningCube_1.0.0.0_ARM.appxsym

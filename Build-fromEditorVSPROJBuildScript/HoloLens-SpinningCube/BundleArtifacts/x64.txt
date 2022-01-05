@@ -1,2 +1,0 @@
-MainPackage=C:\Repos\HoloLens-SpinningCube\Build-fromEditorVSPROJBuildScript\build\bin\x64\Debug\HoloLens-SpinningCube_1.0.0.0_x64_Debug.appx
-SymbolPackage=C:\Repos\HoloLens-SpinningCube\Build-fromEditorVSPROJBuildScript\build\obj\HoloLens-SpinningCube\x64\Debug\Symbols\HoloLens-SpinningCube_1.0.0.0_x64_Debug.appxsym

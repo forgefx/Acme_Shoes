@@ -7,6 +7,7 @@ using System.Collections.Generic;
 
 public static class SolutionBuilder
 {
+    [MenuItem("BuildTests/SolutionBuilder.Build()")]
     public static void Build()
     {
         {
@@ -16,7 +17,7 @@ public static class SolutionBuilder
 
             BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
             buildPlayerOptions.scenes = new[] {"Assets/Scenes/SampleScene.unity"};
-            buildPlayerOptions.locationPathName = "Starfish"; // was: @"C:/Builds";
+            buildPlayerOptions.locationPathName = "Build-SLN"; // was: @"C:/Builds";
             buildPlayerOptions.target = BuildTarget.WSAPlayer;
             buildPlayerOptions.options = BuildOptions.None;
             BuildPipeline.BuildPlayer(buildPlayerOptions);
