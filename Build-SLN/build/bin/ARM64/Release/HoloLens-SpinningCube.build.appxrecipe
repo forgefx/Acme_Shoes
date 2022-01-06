@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Machine>AURORA-2021</Machine>
-    <WindowsUser>AdamK</WindowsUser>
+    <WindowsUser>SYSTEM</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -115,9 +115,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repos\HoloLens-SpinningCube\Build-SLN\HoloLens-SpinningCube\Data\globalgamemanagers.assets.resS">
       <PackagePath>Data\globalgamemanagers.assets.resS</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Repos\HoloLens-SpinningCube\Build-SLN\HoloLens-SpinningCube\Data\level0.resS">
-      <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Repos\HoloLens-SpinningCube\Build-SLN\HoloLens-SpinningCube\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>

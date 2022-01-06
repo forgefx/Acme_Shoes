@@ -36,7 +36,6 @@
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.Mesh" preserve="nothing"/>
-		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
@@ -52,7 +51,6 @@
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputSystemObject" preserve="nothing"/>
-		<type fullname="UnityEngine.InputSystem.RemoteInputPlayerConnection" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.Management">
 		<type fullname="UnityEngine.XR.Management.XRGeneralSettings" preserve="nothing"/>
