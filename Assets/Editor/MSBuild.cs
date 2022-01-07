@@ -16,7 +16,7 @@ public static class MSBuild
         var program = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild.exe";
 
         // What to build.
-        arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Build-SLN\HoloLens-SpinningCube.sln");
+        arguments.Add(@"Build-SLN\HoloLens-SpinningCube.sln");  // was: arguments.Add(@"C:\Repos\HoloLens-SpinningCube\Build-SLN\HoloLens-SpinningCube.sln");
 
         // Build configuration.
         arguments.Add("/p:Configuration=Release;AppxBundle=Always;AppxBundlePlatforms=\"ARM64\""); 
