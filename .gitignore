@@ -3,6 +3,7 @@
 [Oo]bj/
 [Ll]ogs/
 [Bb]uilds/
+[Bb]uild-SLN/
 
 # Visual Studio cache directory
 .vs/
