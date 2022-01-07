@@ -19,11 +19,12 @@ public static class SolutionBuilder
             buildPlayerOptions.scenes = new[] {"Assets/Scenes/SampleScene.unity"};
             buildPlayerOptions.locationPathName = "Build-SLN"; // was: @"C:/Builds";
             buildPlayerOptions.target = BuildTarget.WSAPlayer;
-            buildPlayerOptions.options = BuildOptions.None;
+            buildPlayerOptions.options = BuildOptions.AutoRunPlayer; // In theory, this causes .appx to be generated.
             BuildPipeline.BuildPlayer(buildPlayerOptions);
 
             // Build .appx
-            MSBuild.ConfigureAndRun();
+            //MSBuild.ConfigureAndRun();
         }
     }
+
 }
