@@ -114,3 +114,7 @@ ReplayFiles/ReplayData.replay
 ReplayData.replay
 debug.log
 ProjectSettings/MaintainerSettings.asset
+Build-EXE/
+Build-SLN/
+Build-ARM64/
+Build-APPX/
