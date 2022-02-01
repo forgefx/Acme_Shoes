@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 using System.Collections.Generic;
+using BuildScripts;
 
 public static class SolutionBuilder
 {
@@ -11,6 +12,9 @@ public static class SolutionBuilder
     public static void Build()
     {
         {
+            var foo = BuildScripts.BuildAgentInfo.GetInfo();
+            var bar = BuildAgentInfo.TryGetPathToUWPEditorExtensions();
+            
             // Build solution.
             EditorUserBuildSettings.wsaSubtarget = WSASubtarget.HoloLens;
             EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.D3D;
