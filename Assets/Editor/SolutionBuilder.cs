@@ -25,6 +25,8 @@ public static class SolutionBuilder
             buildPlayerOptions.target = BuildTarget.WSAPlayer;
             buildPlayerOptions.options = BuildOptions.None; // BuildOptions.AutoRunPlayer; // In theory, this causes .appx to be generated.
             //buildPlayerOptions.targetGroup = BuildTargetGroup.WSA;
+            
+            Debug.Log("[FFX] BuildPipeline.BuildPlayer(buildPlayerOptions);");
             BuildPipeline.BuildPlayer(buildPlayerOptions);
 
             // Build .appx
