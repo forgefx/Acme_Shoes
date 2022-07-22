@@ -21,9 +21,6 @@ public static class SolutionBuilder
         buildPlayerOptions.options = BuildOptions.None; // BuildOptions.AutoRunPlayer; // In theory, this causes .appx to be generated.
         //buildPlayerOptions.targetGroup = BuildTargetGroup.WSA;
 
-        // Detailed build report.
-        buildPlayerOptions.options = BuildOptions.DetailedBuildReport;
-        
         Debug.Log("[FFX] BuildPipeline.BuildPlayer(buildPlayerOptions);");
         BuildPipeline.BuildPlayer(buildPlayerOptions);
 
