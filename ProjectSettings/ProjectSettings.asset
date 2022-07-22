@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: ForgeFX
-  productName: HoloLens-SpinningCube
+  companyName: CBRND
+  productName: Acme Shoes HoloTrainer
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -134,15 +134,13 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.01
+  bundleVersion: 2022.7.21.1940
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: -7236977876528562751, guid: 73ca96dfd0215f94abc1972ff055ebf1, type: 2}
-  - {fileID: 0}
-  - {fileID: -9067204383610032776, guid: 5c3ecae1acd5dde4ca9db72593130ed0, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -159,7 +157,8 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.CBRND.CBRNDHoloTrainer
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -624,16 +623,16 @@ PlayerSettings:
     WSA: 3
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template3D
-  metroPackageVersion: 1.0.0.0
+  metroPackageName: CBRND.HoloTrainer.AcmeShoes
+  metroPackageVersion: 2022.7.21.1940
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 00b826a11d05d901
-  metroApplicationDescription: Template_3D
+  metroApplicationDescription: Augmented reality device and process training.
   wsaImages: {}
-  metroTileShortName: Spinning Cube
+  metroTileShortName: CBRND-AR
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -648,8 +647,12 @@ PlayerSettings:
   platformCapabilities:
     WindowsStoreApps:
       GazeInput: True
+      PrivateNetworkClientServer: True
+      InternetClientServer: True
       SpatialPerception: True
+      InternetClient: True
       WebCam: True
+      Microphone: True
   metroTargetDeviceFamilies:
     Holographic: True
   metroFTAName: 
