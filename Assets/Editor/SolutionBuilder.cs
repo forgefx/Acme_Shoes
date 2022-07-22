@@ -8,11 +8,15 @@ public static class SolutionBuilder
     public static void Build()
     {
         // Application version.
-        string appVersion = Application.version;
-        string productName = Application.productName;
+        string appVersion = Application.version;           // Example: "2022.7.21.1940"
+        string productName = Application.productName;      // Example: "Acme Shoes HoloTrainer"
         
-        // Create productCode by replacing spaces and dashes with underscores in product name.
-        string productCode = productName.Replace(" ", "_").Replace("-", "_");
+        var productCode = ProductCode(productName);
+        Debug.Log($"Product code: {productCode}");
+        
+        //
+        var path = $@"../Builds/{appVersion}/{productCode}"; 
+        Debug.Log($"Path: {path}");
         
         // Build solution.
         EditorUserBuildSettings.wsaSubtarget = WSASubtarget.HoloLens;
@@ -20,7 +24,7 @@ public static class SolutionBuilder
 
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] { "Assets/Scenes/SampleScene.unity" };
-        buildPlayerOptions.locationPathName = $@"../Builds/{appVersion}/{productCode}"; // was: @"C:/Builds";
+        buildPlayerOptions.locationPathName = path; 
         buildPlayerOptions.target = BuildTarget.WSAPlayer;
         buildPlayerOptions.options = BuildOptions.None; // BuildOptions.AutoRunPlayer; // In theory, this causes .appx to be generated.
         //buildPlayerOptions.targetGroup = BuildTargetGroup.WSA;
@@ -30,5 +34,19 @@ public static class SolutionBuilder
 
         // Build .appx
         //MSBuild.ConfigureAndRun();
+    }
+
+    private static string ProductCode(string productName)
+    {
+        // Remove " HoloTrainer"
+        string productCode = productName.Replace(" HoloTrainer", "");
+
+        // Replace any spaces with underscores.
+        productCode = productCode.Replace(" ", "_");
+
+        // Replace any dashes with underscores.
+        productCode = productCode.Replace("-", "_");
+        
+        return productCode;
     }
 }
