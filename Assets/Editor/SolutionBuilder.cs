@@ -15,7 +15,7 @@ public static class SolutionBuilder
         Debug.Log($"Product code: {productCode}");
         
         //
-        var path = $@"../Temp"; // was:  $@"../Builds/{appVersion}/{productCode}/Temp"; 
+        var path = $@"../Builds/{appVersion}/{productCode}/Temp"; 
         Debug.Log($"Path: {path}");
         
         // Build solution.
