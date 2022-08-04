@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 using System.Collections.Generic;
+using BuildScripts;
 
 
 public class BuildTests : EditorWindow
@@ -25,7 +26,7 @@ public class BuildTests : EditorWindow
     /// </summary>
     public void Build_VSPROJ()
     {
-        SolutionBuilder.Build();
+        BuildHelper.Build();
 
 
     }
