@@ -36,6 +36,11 @@ public static class SolutionBuilder
         //MSBuild.ConfigureAndRun();
     }
 
+    public static void BuildSolution_Acme_Shoes()
+    {
+        Build();
+    }
+    
     private static string ProductCode(string productName)
     {
         // Remove " HoloTrainer"
