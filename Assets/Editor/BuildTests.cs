@@ -10,6 +10,11 @@ using BuildScripts;
 public class BuildTests : EditorWindow
 {
 
+    [MenuItem("BuildTests/BuildSolution_Acme_Shoes()")]
+    public static void Build2()
+    {
+        BuildScripts.BuildHelper.BuildSolution_Acme_Shoes();
+    }
 
 
     [MenuItem("BuildTests/Show Window")]
