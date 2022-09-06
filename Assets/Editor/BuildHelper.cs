@@ -37,6 +37,7 @@ namespace BuildScripts
             // Build solution.
             EditorUserBuildSettings.wsaSubtarget = WSASubtarget.HoloLens;
             EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.D3D;
+            EditorUserBuildSettings.wsaUWPVisualStudioVersion = "16.11.32802.440";
 
             BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
             buildPlayerOptions.scenes = new[] { "Assets/Scenes/SampleScene.unity" };
