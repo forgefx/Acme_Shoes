@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -24,17 +26,7 @@ namespace BuildScripts
         [MenuItem("BuildTests/BuildHelper.Build()")]
         public static void Build()
         {
-            var args = Environment.GetCommandLineArgs();
-
-            for (int i = 0; i < args.Length; i++)
-            {
-                string arg = args[i];
-                if (arg == "-VisualStudioBuildVersion")
-                {
-                    Debug.Log(arg);
-                    Debug.Log(args[i + 1]);
-                }
-            }
+            
 
             // Application version.
             string appVersion = Application.version; // Example: "2022.7.21.1940"
@@ -50,7 +42,9 @@ namespace BuildScripts
             // Build solution.
             EditorUserBuildSettings.wsaSubtarget = WSASubtarget.HoloLens;
             EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.D3D;
-            //EditorUserBuildSettings.wsaUWPVisualStudioVersion = "16.11.32802.440";
+
+
+            EditorUserBuildSettings.wsaUWPVisualStudioVersion = GetVisualStudioBuildVersion();//"16.11.32802.440";
 
             BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
             buildPlayerOptions.scenes = new[] { "Assets/Scenes/SampleScene.unity" };
@@ -78,6 +72,33 @@ namespace BuildScripts
             productCode = productCode.Replace("-", "_");
 
             return productCode;
+        }
+
+        private static string GetVisualStudioBuildVersion()
+        {
+            string ret = "";
+
+            var args = Environment.GetCommandLineArgs();
+            if (args.Length < 0 || !args.Contains("-VisualStudioBuildVersion"))
+                return ret;
+
+            string pattern = @"^([0-9]+.){5}$";
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                if (args[i] == "-VisualStudioBuildVersion")
+                {
+                    Debug.Log(args[i]);
+                    Debug.Log(args[i + 1]);
+
+                    if (Regex.IsMatch(args[i + 1], pattern))
+                        ret = args[i + 1];
+
+                    break;
+                }
+            }
+
+            return ret;
         }
     }
 }
