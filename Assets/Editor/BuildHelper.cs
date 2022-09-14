@@ -24,7 +24,12 @@ namespace BuildScripts
         [MenuItem("BuildTests/BuildHelper.Build()")]
         public static void Build()
         {
-            Debug.Log(Environment.GetCommandLineArgs());
+            Debug.Log("Command Line Arguments");
+            var args = Environment.GetCommandLineArgs();
+            foreach (var arg in args)
+            {
+                Debug.Log(arg);
+            }
 
             // Application version.
             string appVersion = Application.version; // Example: "2022.7.21.1940"
