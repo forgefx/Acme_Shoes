@@ -24,11 +24,16 @@ namespace BuildScripts
         [MenuItem("BuildTests/BuildHelper.Build()")]
         public static void Build()
         {
-            Debug.Log("Command Line Arguments");
             var args = Environment.GetCommandLineArgs();
-            foreach (var arg in args)
+
+            for (int i = 0; i < args.Length; i++)
             {
-                Debug.Log(arg);
+                string arg = args[i];
+                if (arg == "-VisualStudioBuildVersion")
+                {
+                    Debug.Log(arg);
+                    Debug.Log(args[i + 1]);
+                }
             }
 
             // Application version.
