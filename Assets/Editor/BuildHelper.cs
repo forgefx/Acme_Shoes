@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -23,6 +24,8 @@ namespace BuildScripts
         [MenuItem("BuildTests/BuildHelper.Build()")]
         public static void Build()
         {
+            Debug.Log(Environment.GetCommandLineArgs());
+
             // Application version.
             string appVersion = Application.version; // Example: "2022.7.21.1940"
             string productName = Application.productName; // Example: "Acme Shoes HoloTrainer"
@@ -37,7 +40,7 @@ namespace BuildScripts
             // Build solution.
             EditorUserBuildSettings.wsaSubtarget = WSASubtarget.HoloLens;
             EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.D3D;
-            EditorUserBuildSettings.wsaUWPVisualStudioVersion = "16.11.32802.440";
+            //EditorUserBuildSettings.wsaUWPVisualStudioVersion = "16.11.32802.440";
 
             BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
             buildPlayerOptions.scenes = new[] { "Assets/Scenes/SampleScene.unity" };
