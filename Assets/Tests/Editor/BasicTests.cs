@@ -34,17 +34,17 @@ public class BasicTests
     }
 
     [Test]
-    public void TestCreateRenderTexture()
+    public void TestCreateRenderTexture1()
     {
-        try
-        {
-            RenderTexture rt = new RenderTexture(256, 256, 16, RenderTextureFormat.ARGB32);
-            rt.Create();
-        }
-        catch (System.Exception ex)
-        {
-            Assert.Fail(ex.Message);
-            throw;
-        }
+        RenderTexture rt = new RenderTexture(256, 256, 16, RenderTextureFormat.ARGB32);
+        rt.Create();
+    }
+
+    [Test]
+    public void TestCreateRenderTexture2()
+    {
+        RenderTexture rt = new RenderTexture(1024, 1024, 0);
+        rt.enableRandomWrite = true;
+        rt.Create();
     }
 }
