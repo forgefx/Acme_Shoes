@@ -34,13 +34,6 @@ public class BasicTests
     }
 
     [Test]
-    public void TestCreateRenderTexture1()
-    {
-        RenderTexture rt = new RenderTexture(256, 256, 16, RenderTextureFormat.ARGB32);
-        rt.Create();
-    }
-
-    [Test]
     public void TestCreateRenderTexture2()
     {
         RenderTexture rt = new RenderTexture(1024, 1024, 0);
