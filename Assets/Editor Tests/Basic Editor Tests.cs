@@ -28,4 +28,12 @@ public class BasicEditorTests
     {
         Assert.True(2 + 2 == 4);
     }
+
+    [Test]
+    public void TestCreateRenderTexture()
+    {
+        RenderTexture rt = new RenderTexture(1024, 1024, 0);
+        rt.enableRandomWrite = true;
+        rt.Create();
+    }
 }
