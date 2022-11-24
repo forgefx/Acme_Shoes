@@ -32,4 +32,19 @@ public class BasicTests
 
         Assert.IsNotNull(GameObject.Find(name));
     }
+
+    [Test]
+    public void TestCreateRenderTexture()
+    {
+        try
+        {
+            RenderTexture rt = new RenderTexture(256, 256, 16, RenderTextureFormat.ARGB32);
+            rt.Create();
+        }
+        catch (System.Exception ex)
+        {
+            Assert.Fail(ex.Message);
+            throw;
+        }
+    }
 }
