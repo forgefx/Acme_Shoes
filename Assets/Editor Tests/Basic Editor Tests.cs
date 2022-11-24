@@ -29,7 +29,7 @@ public class BasicEditorTests
         Assert.True(2 + 2 == 4);
     }
 
-    [Test]//Crashes when ran with -nographics command line argument
+    [Test, Explicit]//Crashes when ran with -nographics command line argument
     public void TestCreateRenderTexture()
     {
         RenderTexture rt = new RenderTexture(1024, 1024, 0);
