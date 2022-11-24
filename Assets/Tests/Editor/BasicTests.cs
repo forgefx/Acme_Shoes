@@ -33,7 +33,7 @@ public class BasicTests
         Assert.IsNotNull(GameObject.Find(name));
     }
 
-    [Test]
+    [Test]//Fails when ran with -nographics command line argument
     public void TestCreateRenderTexture2()
     {
         RenderTexture rt = new RenderTexture(1024, 1024, 0);
